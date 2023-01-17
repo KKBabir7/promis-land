@@ -1,0 +1,111 @@
+
+
+
+
+footer{
+    padding-top: 40px;
+    border-top: 4px solid rgba(190, 190, 190, 0.2);
+    margin-bottom: 50px;
+  }
+  footer .container{ 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+  }
+  footer .logocontent img{
+    width: 150px;
+    margin-top: 20px;
+  }
+  footer .logocontent p{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 1000;
+  }
+  footer .line{
+    height: 2px;
+    width: 100%;
+    background: #17304E;
+    position: relative;
+    border-radius: 10px;
+  }
+  footer .line:after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 90%;
+    left: 0;
+    top: -2px;
+    border-radius: 10px;
+    background: #17304E;
+  }
+  footer .service-line:after{
+    width: 60% !important;
+  }
+  footer .legal-line:after{
+    width: 60% !important;
+  }  
+  footer .dbll{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer .dbll h3{
+    color: #17304E;
+    font-weight: 1000;
+    text-transform: uppercase;
+  }
+  footer .dbll p{
+   line-height: 30px;
+  }
+  footer .dbll p a{
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: 1000;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  footer .dbll p a:hover{
+    opacity: 0.8;
+  }
+  
+  
+  footer .social{
+    margin-top: 15px;
+    
+  }
+  
+  footer .social ul {
+     padding: 0;
+     margin: 0;
+  }
+  footer .social ul li{
+    list-style-type: none;
+    display: inline-block;
+  }
+  .social-icon {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    border-radius: 1000px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 11px;
+    cursor: pointer;
+    background: #17304E;
+  }
+  
+  
+  .social-icon i {
+    transition: 0.4s all
+  }
+  
+  .social-icon:hover i {
+    transform: scale(1.2)
+  }
+
+@media screen and (max-width: 364px) {
+    footer .social ul li{
+      margin-bottom: 5px;
+    }
+   }
+  

@@ -1,0 +1,217 @@
+
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+		   dbcourse
+		</title>
+		<link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/navbar.css"> 
+		<link rel="stylesheet" href="css/dashboard.css"> 
+		
+    </head>
+    <style>
+
+	
+			img{
+			image-rendering: -moz-crisp-edges !important;       
+			image-rendering:   -o-crisp-edges !important;       
+			image-rendering: -webkit-optimize-contrast !important;
+			image-rendering: crisp-edges !important;
+			-ms-interpolation-mode: nearest-neighbor !important;
+		}
+    </style>
+    <body>
+<!-- header or navbar -->
+<header class="header" id="header">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid navbarfild">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle plus collapsed" data-toggle="collapse" data-target="#navbar-collapse-plus">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html"><img src="img/logo/Asset 1SVG.svg"></a>
+		  </div>
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="navbar-collapse-plus">
+			<ul class="nav navbar-nav nav-left-items">
+				<li><a href="filters.html">Propety </a></li>
+				<li><a href="finance.html">Finance</a></li>
+				<li><a href="weit.html">Education Portal</a></li>
+				<li><a href="rent.html">For Rent</a></li>
+				<li><a href="price.html">Price Atlas</a></li>
+				<li><a href="gratis.html">Free Webinar</a></li>
+			  </ul>
+
+			<div class="nav navbar-nav navbar-right " id="prfilere">
+				<div class="media">
+					<div class="media-left">
+					  <a href="#">
+						<img class="media-object" src="img/profile/1.jpg" alt="...">
+					  </a>
+					</div>
+					<div class="media-body">
+					  <h4 class="media-heading">Hallo!</h4>
+					  <div class="btn-group" role="group" aria-label="...">
+						<a href="" class="btn btn-default">Anmelden</a>
+						<a href="" class="btn btn-default">Registration</a>
+					  </div>
+					</div>
+				  </div>
+			</div> 
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	  </nav>
+	  <div class="dropup drop-tem" style="position: fixed;bottom: 20px;left: 0;background: #fff !important;border-radius: 10px;">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background: #fff !important;color:darkolivegreen;font-weight: bold;border-radius: 10px;outline: none !important;">All Page
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+		  <li><a href="beratung.html">Beratung</a></li>
+		  <li><a href="learning.html">Learning</a></li>
+		  <li><a href="object.html">Object</a></li>
+		  <li><a href="blog.html">Blog</a></li>
+		  <li><a href="subbblog.html">Sub-blog</a></li>
+		  <li><a href="video.html">Video</a></li>
+		  <li><a href="seminar.html">Seminar</a></li>
+		  <li><a href="dashboard.html">Dashboard</a></li>
+		  <li class="active"><a href="dbcourse.html">DB-course</a></li>
+		  <li><a href="dbfavourite.html">DB-favourite</a></li>
+		  <li><a href="foreclosure.html">Foreclosure</a></li>
+		</ul>
+	  </div>
+</header>
+<!-- all content -->
+		<div class="mainsection">
+	<!-- sidenavbar navbar -->
+			<div id="sidebar">
+				<p id="sideclose" onclick="sideclose()"><i class="bi bi-x-circle"></i></p>
+				<ul> 	
+					<li ><a href="dashboard.html"><i class="bi bi-person-fill"></i>  Mein Profil</a></li>				
+					<li><a href="dbfavourite.html"><i class="bi bi-heart-fill"></i> Favoriten</a></li>
+					<li><a href="#"><i class="bi bi-search"></i> Suchaufträge</a></li>
+					<li><a href="#"><i class="bi bi-chat-square-text-fill"></i> Bewertungen</a></li>
+					<li><a href="#"><i class="bi bi-question-circle-fill"></i> Fragen</a></li>
+					<li><a href="#"><i class="bi bi-gear-fill"></i> Einstellungen</a></li>
+					<li class="sideactive"><a href="dbcourse.html"><i class="bi bi-mortarboard-fill"></i> Kurse</a></li>
+					<li><a href="#"><i class="bi bi-person-video3"></i> Seminare</a></li>
+					<li><a href="#"><i class="bi bi-envelope-paper-fill"></i> Beratung</a></li>
+					<li><a href="#"><i class="bi bi-box-arrow-right"></i> Abmelden</a></li>
+				</ul>
+			</div>
+		<!-- mobile bottom navbar -->
+			<div class="mobilefixedsidemenu">
+				<div class="row">
+					<div class="col-xs-6">
+                         <p onclick="sideopen()" id="sideopen"><i class="bi bi-plus-circle"></i></p>
+					</div>
+					<div class="col-xs-6">
+						<div id="prinummoblie"></div>
+					</div>
+				</div>
+			</div>			
+		<!-- all main content -->
+			<div class="container-fluid main-content">
+				<div class="row coursecontent">
+					<div class="col-md-12" >
+                        <div class="row">
+                            <div class="col-sm-12">
+                               <h1 class="curseh1">KURSE</h1>
+                               <p  class="cursep">Du nimmst an einem Webinar teil? Den Link stellen wir dir hier zur Verfügung.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/fore/1.png" alt="...">
+                                    <div class="caption">
+                                      <h3>Zwangsversteigerung</h3>
+                                      <p>by Promised Land Team</p>
+                                      <date><strong>Datum der Einschreibung :</strong> 2021-12-29</date><br>
+                                      <date><strong>Zahlungsmethode :</strong> Free</date><br>
+                                     <a href="#" class="btn btn-primary btn-block" role="button"><i class="bi bi-play-circle-fill"></i> Video ansehen</a>
+                                    </div>
+                                 </div>
+                               </div>
+                               <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/dbcourse/1.png" alt="...">
+                                    <div class="caption">
+                                      <h3>Herzlich Willkommen!</h3>
+                                      <p>by Promised Land Team</p>
+                                      <date><strong>Datum der Einschreibung :</strong>  2021-12-19</date><br>
+                                      <date><strong>Zahlungsmethode :</strong> Free</date><br>
+                                     <a href="#" class="btn btn-primary btn-block" role="button"><i class="bi bi-play-circle-fill"></i> Video ansehen</a>
+                                    </div>
+                                 </div>
+                               </div>
+                               <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="img/fore/1.png" alt="...">
+                                    <div class="caption">
+                                      <h3>Zwangsversteigerung</h3>
+                                      <p>by Promised Land Team</p>
+                                      <date><strong>Datum der Einschreibung :</strong> 2021-12-29</date><br>
+                                      <date><strong>Zahlungsmethode :</strong> Free</date><br>
+                                     <a href="#" class="btn btn-primary btn-block" role="button"><i class="bi bi-play-circle-fill"></i> Video ansehen</a>
+                                    </div>
+                                 </div>
+                               </div>
+                            </div>
+                        </div> 
+				</div>
+			</div> 
+        </div>
+            <script src="js/bootstrap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+			<script  src="js/dash.js"></script>
+		    <script>
+				//notification  button for responsive 
+				function myFunction(xy) {
+				if (xy.matches) { // If media query matches
+					var noti=document.getElementById("notiid")
+					var getnoti=document.getElementById("notiget")
+					noti.appendChild(getnoti);
+				} else {
+				document.body.style.backgroundColor = "#fff";
+				}
+				}
+				
+				var xy = window.matchMedia("(max-width: 1162px)")
+				myFunction(xy) // Call listener function at run time
+				xy.addListener(myFunction) // Attach listener function on state changes
+			</script>
+
+		   <script>   
+            //prinum button responsive 
+			function myFunction(xq) {
+			  if (xq.matches) { // If media query matches
+				var getbtnpri=document.getElementById("getbtnpri")
+				var prinummoblie=document.getElementById("prinummoblie")
+				prinummoblie.appendChild(getbtnpri);
+			  } else {
+			   document.body.style.backgroundColor = "#fff";
+			  }
+			}
+			
+			var xq = window.matchMedia("(max-width: 768px)")
+			myFunction(xq) // Call listener function at run time
+			xq.addListener(myFunction) // Attach listener function on state changes
+			</script>
+    </body>
+</html>

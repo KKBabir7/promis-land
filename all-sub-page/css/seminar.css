@@ -1,0 +1,407 @@
+
+  .seminar .seminarjum{
+      padding: 40px 40px;
+      background:rgba(45, 108, 233, 0.05);
+      position: relative;
+      border-radius: 15px;
+    box-shadow: 0px 2px 9px -2px rgb(100 100 100 / 20%);
+    border: none;
+  }
+  label{
+    margin-left: 6px;
+    opacity: 0.8;
+  }
+  .custom-select {
+    position: relative;
+  
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  
+  }
+  
+  .select-selected {
+    background-color: #fff;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border:1px solid #2D6CE9;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   transition: all 0.3s ease;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    
+    top: 18px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+   
+  }
+  
+  .select-selected {
+    border-color: rgba(0,0,0,0.1) !important;
+    border-radius: 4px;
+    padding: 9px 18px !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-height: 27px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 45px;
+    padding-right: 20px;
+  
+  }
+  .select-items div{
+      display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-height: 27px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis 
+  }
+  
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: rgba(55,55,55,0.9);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  .select-selected:hover{
+    
+    border:1px solid  #2D6CE9 !important;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 200px;height: auto !important;
+    overflow-y: auto;
+    border-radius: 5px 5px 0px 0px;
+    
+  
+  }
+  
+  /* width */
+  .select-items::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  
+  .select-items {
+    scrollbar-width: thin !important;
+    scrollbar-color: #f1f1f1 rgba(0, 0, 0, 0.3) !important;
+  }
+  /* Track */
+  .select-items::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  .select-items::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Handle on hover */
+  .select-items ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }  
+
+.address input{
+    height: 45px;
+    width: 100%;
+    padding-left:20px;
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: none !important;
+    border: 1px solid rgba(0,0,0,0.1);
+    }
+ .address input:hover{
+      border: 1px solid #2D6CE9;
+    }
+.address i{
+      position: absolute;
+      top: 15px;
+      color: #2D6CE9;
+      left: 20px;
+    }
+
+
+
+
+
+    .datapiker input[type="date"] {
+        display:block;
+        position:relative;
+        padding:1rem 3.5rem 1rem 0.75rem;
+        font-size:14px;
+        width: 100%;
+        border:1px solid rgba(0,0,0,0.1);
+        height: 45px;
+        color: rgba(55,55,55,0.9);
+        border-radius:4px;
+        padding-top: 13px;
+        background:
+          white
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+          right 1rem
+          center
+          no-repeat;
+        
+        cursor:pointer;
+      }
+      .datapiker input[type="date"]:focus,.datapiker input[type="date"]:hover {
+        outline:none;
+        border-color:#2D6CE9;
+        box-shadow:none;
+      }
+      
+      ::-webkit-datetime-edit {}
+      ::-webkit-datetime-edit-fields-wrapper {}
+      ::-webkit-datetime-edit-month-field:hover,
+      ::-webkit-datetime-edit-day-field:hover,
+      ::-webkit-datetime-edit-year-field:hover {
+        background:#2D6CE9;
+        color: #fff;
+      }
+      ::-webkit-datetime-edit-text {
+        opacity:1;
+      }
+      ::-webkit-clear-button,
+      ::-webkit-inner-spin-button {
+        display:none;
+      }
+      ::-webkit-calendar-picker-indicator {
+        position:absolute;
+        width:2.5rem;
+        height:100%;
+        top:0;
+        padding-left: 15px;
+        right:0;
+        bottom:0;
+        opacity:0;
+        cursor:pointer;
+        color:#fff;
+        background:#2D6CE9;
+       
+      }
+      
+      .datapiker input[type="date"]:hover::-webkit-calendar-picker-indicator { opacity:0.2; }
+      .datapiker input[type="date"]:hover::-webkit-calendar-picker-indicator:hover { opacity:0.2; }
+
+
+
+
+
+
+
+
+
+
+      
+.aditonsuchen{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 30px;
+  }
+  .aditonsuchen .btn,.saminar-booking .btn{
+    background: #17304E;
+    height: 45px;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    width: 270px;
+    font-weight: 1000;
+    border: 2px solid #16314F !important;
+  }
+  .aditonsuchen .btn:hover,.saminar-booking .btn:hover{
+      border: 2px solid #16314F !important;
+      transition: all 0.3s ease;
+      background: transparent;
+      color: #16314F;
+    }
+  
+
+
+
+
+
+
+.saminar-date .accordion{
+  padding: 40px 40px;
+  background: rgba(241,111,92,0.1);
+  position: relative;
+  border-radius: 15px;
+box-shadow: 0px 2px 9px -2px rgb(100 100 100 / 20%);
+border: none; 
+}
+.saminar-date .datetitle date{
+  font-size: 18px;
+  font-weight: 1000;
+  color: #333;
+}
+.saminar-date .datetitle h2{
+  font-size: 26px;
+  font-weight: 1000;
+  color: #333;
+}
+.accordion .panel-group{
+  margin-bottom: 30px;
+}
+    .accordion .panel,
+    .accordion .panel-body {
+        box-shadow: none;
+        border:none;
+    }
+
+    .accordion .panel-group .panel-heading {
+        padding: 0;
+        padding-top:8px;
+        padding-bottom:8px;
+        border-bottom:none;
+        border:none;
+        background:#ffff;
+        border-radius: 0px;
+    }
+    
+    .accordion .panel-group .panel-heading a {
+        display: block;
+        padding: 10px 25px;
+        text-decoration: none;
+        position: relative;
+        font-size:18px;
+        color:#2D6CE9;
+        
+    }
+    .accordion .panel-group .panel-heading a span{
+      font-weight:1000;	
+        color:#333;
+        font-size: 16px;
+        font-weight: 1000;
+        line-height: 1em;	
+      transition:all 0.2s;padding-right: 50px !important;
+      padding-top: 10px;
+      display: block;
+    }
+    .accordion .panel-group .panel-heading a span:hover{
+      color:#2D6CE9;
+    }
+    .accordion .panel-body .p1{
+      font-size: 14px;
+      font-weight: 200;
+      color: #000;
+      line-height: 20px;
+      padding-right: 100px;
+      padding-left: 25px;
+    }
+    .accordion .panel-body ol{
+      padding-right: 100px;
+    }
+    .accordion .panel-body ol li{
+      font-size: 14px;
+      font-weight: 200;
+      color: #000;
+      line-height: 30px;
+    }
+    .accordion .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+        border-top: none;
+    }
+    .accordion .panel-group .panel {
+        margin-bottom: -23;
+        border-bottom: none;
+        border-radius: 0px;
+        border-right: none;
+        border-left: none;
+    }
+    .accordion .panel-group .panel-heading a:after {
+        content: "\2212";
+        position: absolute;
+        top: 16px;
+        right:15px;
+        color:#2D6CE9;
+        display: inline-block;
+        font-family:verdana;
+        font-size:22px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        float: right;
+        transition: transform .25s linear;
+        -webkit-transition: -webkit-transform .25s linear;
+    }
+    
+    .accordion .panel-group .panel-heading a.collapsed:after {
+        content: "\002b";
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    
+.saminar-booking h5{
+  font-size: 16px;
+  color: #333;
+  font-weight: 1000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .accordion .panel-body ol {
+    padding-right: 60px;
+}
+}
+@media screen and (max-width: 492px) {
+  .accordion .panel-body ol {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.seminar .seminarjum {
+  padding: 20px 10px;
+}
+.saminar-date .accordion{
+  padding: 20px 10px;
+}
+.accordion .panel-group .panel-heading a span{
+  padding-right: 20px;
+  text-align: justify;
+}
+}
+
+
+
+@media screen and (max-width: 368px) {
+.aditonsuchen .btn, .saminar-booking .btn{
+  width: 200px;
+}
+}

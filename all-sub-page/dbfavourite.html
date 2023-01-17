@@ -1,0 +1,280 @@
+
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+		   dbfavourite
+		</title>
+		<link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/navbar.css"> 
+		<link rel="stylesheet" href="css/dashboard.css"> 
+		
+    </head>
+    <style>
+
+	
+			img{
+			image-rendering: -moz-crisp-edges !important;       
+			image-rendering:   -o-crisp-edges !important;       
+			image-rendering: -webkit-optimize-contrast !important;
+			image-rendering: crisp-edges !important;
+			-ms-interpolation-mode: nearest-neighbor !important;
+		}
+    </style>
+    <body>
+<!-- header or navbar -->
+<header class="header" id="header">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid navbarfild">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle plus collapsed" data-toggle="collapse" data-target="#navbar-collapse-plus">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html"><img src="img/logo/Asset 1SVG.svg"></a>
+		  </div>
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="navbar-collapse-plus">
+			<ul class="nav navbar-nav nav-left-items">
+				<li><a href="filters.html">Propety </a></li>
+				<li><a href="finance.html">Finance</a></li>
+				<li><a href="weit.html">Education Portal</a></li>
+				<li><a href="rent.html">For Rent</a></li>
+				<li><a href="price.html">Price Atlas</a></li>
+				<li><a href="gratis.html">Free Webinar</a></li>
+			  </ul>
+
+			<div class="nav navbar-nav navbar-right " id="prfilere">
+				<div class="media">
+					<div class="media-left">
+					  <a href="#">
+						<img class="media-object" src="img/profile/1.jpg" alt="...">
+					  </a>
+					</div>
+					<div class="media-body">
+					  <h4 class="media-heading">Hallo!</h4>
+					  <div class="btn-group" role="group" aria-label="...">
+						<a href="" class="btn btn-default">Anmelden</a>
+						<a href="" class="btn btn-default">Registration</a>
+					  </div>
+					</div>
+				  </div>
+			</div> 
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	  </nav>
+	  <div class="dropup drop-tem" style="position: fixed;bottom: 20px;left: 0;background: #fff !important;border-radius: 10px;">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background: #fff !important;color:darkolivegreen;font-weight: bold;border-radius: 10px;outline: none !important;">All Page
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+		  <li><a href="beratung.html">Beratung</a></li>
+		  <li><a href="learning.html">Learning</a></li>
+		  <li><a href="object.html">Object</a></li>
+		  <li><a href="blog.html">Blog</a></li>
+		  <li><a href="subbblog.html">Sub-blog</a></li>
+		  <li><a href="video.html">Video</a></li>
+		  <li><a href="seminar.html">Seminar</a></li>
+		  <li><a href="dashboard.html">Dashboard</a></li>
+		  <li><a href="dbcourse.html">DB-course</a></li>
+		  <li class="active"><a href="dbfavourite.html">DB-favourite</a></li>
+		  <li><a href="foreclosure.html">Foreclosure</a></li>
+		</ul>
+	  </div>
+</header>
+<!-- all content -->
+		<div class="mainsection">
+	<!-- sidenavbar navbar -->
+			<div id="sidebar">
+				<p id="sideclose" onclick="sideclose()"><i class="bi bi-x-circle"></i></p>
+				<ul> 	
+					<li ><a href="dashboard.html"><i class="bi bi-person-fill"></i>  Mein Profil</a></li>				
+					<li class="sideactive"><a href="dbfavourite.html"><i class="bi bi-heart-fill"></i> Favoriten</a></li>
+					<li><a href="#"><i class="bi bi-search"></i> Suchaufträge</a></li>
+					<li><a href="#"><i class="bi bi-chat-square-text-fill"></i> Bewertungen</a></li>
+					<li><a href="#"><i class="bi bi-question-circle-fill"></i> Fragen</a></li>
+					<li><a href="#"><i class="bi bi-gear-fill"></i> Einstellungen</a></li>
+					<li><a href="dbcourse.html"><i class="bi bi-mortarboard-fill"></i> Kurse</a></li>
+					<li><a href="#"><i class="bi bi-person-video3"></i> Seminare</a></li>
+					<li><a href="#"><i class="bi bi-envelope-paper-fill"></i> Beratung</a></li>
+					<li><a href="#"><i class="bi bi-box-arrow-right"></i> Abmelden</a></li>
+				</ul>
+			</div>
+		<!-- mobile bottom navbar -->
+			<div class="mobilefixedsidemenu">
+				<div class="row">
+					<div class="col-xs-6">
+                         <p onclick="sideopen()" id="sideopen"><i class="bi bi-plus-circle"></i></p>
+					</div>
+					<div class="col-xs-6">
+						<div id="prinummoblie"></div>
+					</div>
+				</div>
+			</div>			
+		<!-- all main content -->
+			<div class="container-fluid main-content">
+				<div class="row">
+					<div class="col-md-12" >
+                        <div class="row invest-now section-5">
+                            <div class="heading-part" data-aos="zoom-in-down"  data-aos-duration="1000">
+                            <h1>Favourite Apartment</h1>
+                            <p>The Most frequently searched and most popular apartment of the application will be in the list</p>
+                          </div>
+                          <div  class="col-md-6 col-sm-6 col-lg-4">
+                              <a style="text-decoration:none;" href="#">
+                                  <div class="thumbnail" data-aos="fade-up" data-aos-easing="linear"
+                                  data-aos-duration="500">
+                                      <p class="all-btn-p"><a href="#" class="btn all-btn btn-default" role="button">1.2 km away</a></p>
+                                      <p class="all-btn-p-right"><a href="#" class="btn all-btn btn-default" role="button">For sell</a></p>
+                                      <img class="main-image" src="img/apert/1.jpg" alt="...">
+                                      <div class="caption">
+                                          <div class="main-h">
+                                              <img  src="img/apert/man.jpg" alt="...">
+                                             
+                                              <h3><i class="bi bi-geo-alt"></i>Knightsbridge</h3>
+                                              <h4>$2,500</h4>
+                                              <h5>Apartment London</h5>
+                                              <div class="name-bottom">
+                                                  <center>
+                                                  <ul>
+                                                      <li><span>2 <i class="fa fa-bed"></i></span><br><span>Beadroom</span></li>
+                                                      <li><span>2 <i class="fa fa-bath"></i></span><br><span>Bathroom</span></li>
+                                                      <li><span>1776 <i class="fa fa-square-o"></i></span><br><span>Squre Ft</span></li>
+                                                  </ul></center>
+                                              </div>
+                                              <p class="mainpokl">Beautiful Huge I Familly House In Heart Of Wbstbury Newly Renovated With Furniture</p>
+                                              
+                                          </div>
+                                          <div class="all-re" id="acolor">
+                                              <p class="acolor"><i class="bi bi-fullscreen-exit"></i></p>
+                                                <p class="acolor"><i class="bi bi-heart"></i></p>
+                                                <p class="acolor"><i class="bi bi-plus-circle"></i></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div  class="col-md-6 col-sm-6 col-lg-4">
+                              <a style="text-decoration:none;" href="#">
+                                  <div class="thumbnail"  data-aos="fade-up" data-aos-easing="linear"
+                                  data-aos-duration="700">
+                                      <p class="all-btn-p"><a href="#" class="btn all-btn btn-default" role="button">1.2 km away</a></p>
+                                      <p class="all-btn-p-right"><a href="#" class="btn all-btn btn-default" role="button">For sell</a></p>
+                                      <img class="main-image" src="img/apert/2.jpg" alt="...">
+                                      <div class="caption">
+                                          <div class="main-h">
+                                              <img  src="img/apert/man.jpg" alt="...">
+                                             
+                                              <h3><i class="bi bi-geo-alt"></i>Knightsbridge</h3>
+                                              <h4>$2,500</h4>
+                                              <h5>Apartment London</h5>
+                                              <div class="name-bottom">
+                                                  <center>
+                                                  <ul>
+                                                      <li><span>2 <i class="fa fa-bed"></i></span><br><span>Beadroom</span></li>
+                                                      <li><span>2 <i class="fa fa-bath"></i></span><br><span>Bathroom</span></li>
+                                                      <li><span>1776 <i class="fa fa-square-o"></i></span><br><span>Squre Ft</span></li>
+                                                  </ul></center>
+                                              </div>
+                                              <p class="mainpokl">Beautiful Huge I Familly House In Heart Of Wbstbury Newly Renovated With Furniture</p>
+                                              
+                                          </div>
+                                          <div class="all-re" id="acolor">
+                                              <p class="acolor"><i class="bi bi-fullscreen-exit"></i></p>
+                                                <p class="acolor"><i class="bi bi-heart"></i></p>
+                                                <p class="acolor"><i class="bi bi-plus-circle"></i></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div  class="col-md-6 col-sm-6 col-lg-4">
+                              <a style="text-decoration:none;" href="#">
+                                  <div class="thumbnail"  data-aos="fade-up" data-aos-easing="linear"
+                                  data-aos-duration="900">
+                                      <p class="all-btn-p"><a href="#" class="btn all-btn btn-default" role="button">1.2 km away</a></p>
+                                      <p class="all-btn-p-right"><a href="#" class="btn all-btn btn-default" role="button">For sell</a></p>
+                                      <img class="main-image" src="img/apert/1.jpg" alt="...">
+                                      <div class="caption">
+                                          <div class="main-h">
+                                              <img  src="img/apert/man.jpg" alt="...">
+                                             
+                                              <h3><i class="bi bi-geo-alt"></i>Knightsbridge</h3>
+                                              <h4>$2,500</h4>
+                                              <h5>Apartment London</h5>
+                                              <div class="name-bottom">
+                                                  <center>
+                                                  <ul>
+                                                      <li><span>2 <i class="fa fa-bed"></i></span><br><span>Beadroom</span></li>
+                                                      <li><span>2 <i class="fa fa-bath"></i></span><br><span>Bathroom</span></li>
+                                                      <li><span>1776 <i class="fa fa-square-o"></i></span><br><span>Squre Ft</span></li>
+                                                  </ul></center>
+                                              </div>
+                                              <p class="mainpokl">Beautiful Huge I Familly House In Heart Of Wbstbury Newly Renovated With Furniture</p>
+                                              
+                                          </div>
+                                          <div class="all-re" id="acolor">
+                                              <p class="acolor"><i class="bi bi-fullscreen-exit"></i></p>
+                                                <p class="acolor"><i class="bi bi-heart"></i></p>
+                                                <p class="acolor"><i class="bi bi-plus-circle"></i></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                        </div>
+				</div>
+			</div> 
+        </div>
+            <script src="js/bootstrap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+			<script  src="js/dash.js"></script>
+		    <script>
+				//notification  button for responsive 
+				function myFunction(xy) {
+				if (xy.matches) { // If media query matches
+					var noti=document.getElementById("notiid")
+					var getnoti=document.getElementById("notiget")
+					noti.appendChild(getnoti);
+				} else {
+				document.body.style.backgroundColor = "#fff";
+				}
+				}
+				
+				var xy = window.matchMedia("(max-width: 1162px)")
+				myFunction(xy) // Call listener function at run time
+				xy.addListener(myFunction) // Attach listener function on state changes
+			</script>
+
+		   <script>   
+            //prinum button responsive 
+			function myFunction(xq) {
+			  if (xq.matches) { // If media query matches
+				var getbtnpri=document.getElementById("getbtnpri")
+				var prinummoblie=document.getElementById("prinummoblie")
+				prinummoblie.appendChild(getbtnpri);
+			  } else {
+			   document.body.style.backgroundColor = "#fff";
+			  }
+			}
+			
+			var xq = window.matchMedia("(max-width: 768px)")
+			myFunction(xq) // Call listener function at run time
+			xq.addListener(myFunction) // Attach listener function on state changes
+			</script>
+    </body>
+</html>
