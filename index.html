@@ -24,7 +24,17 @@
 		<link rel="stylesheet" href="css/footer.css"> 
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-   <script type="text/javascript">
+  
+    <style>
+			img{
+			image-rendering: -moz-crisp-edges !important;       
+			image-rendering:   -o-crisp-edges !important;       
+			image-rendering: -webkit-optimize-contrast !important;
+			image-rendering: crisp-edges !important;
+			-ms-interpolation-mode: nearest-neighbor !important;
+		}
+    </style>
+	 <script type="text/javascript">
     function mousehandler(e) {
         var myevent = (isNS) ? e : event;
         var eventbutton = (isNS) ? myevent.which : myevent.button;
@@ -64,15 +74,6 @@
         return true;
     }
 </script>
-    <style>
-			img{
-			image-rendering: -moz-crisp-edges !important;       
-			image-rendering:   -o-crisp-edges !important;       
-			image-rendering: -webkit-optimize-contrast !important;
-			image-rendering: crisp-edges !important;
-			-ms-interpolation-mode: nearest-neighbor !important;
-		}
-    </style>
    <body oncontextmenu="return false">
 		<header class="header" id="header">
 			<nav class="navbar navbar-default">
