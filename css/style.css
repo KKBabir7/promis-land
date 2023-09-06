@@ -33,8 +33,12 @@ body{
 
 
 
+
 .top-section{
-    background-image: url("../img/top-section/1.jpg");
+    background:linear-gradient(
+    rgba(0, 26, 53, 0.2),
+    rgba(0, 20, 53, 0.4)
+  ), url("../img/top-section/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -43,7 +47,6 @@ body{
     height: 100%;
    z-index: 1000;
 }
-
 .top-section .jumbotron{
    padding: 10px 30px 30px 30px;
    position: relative;
