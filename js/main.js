@@ -1,4 +1,4 @@
-<script>
+
 const js_thml = () => {
 	let code = "";
 	code += "\n";
@@ -1159,4 +1159,3 @@ const js_thml = () => {
 
 document.getElementById("js_html").innerText = js_thml();
 document.getElementById("html-text").value = js_thml();
-</script>
